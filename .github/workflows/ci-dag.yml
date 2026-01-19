@@ -22,6 +22,5 @@ jobs:
           repo_name: rops-dags-storage
           mode: lock
           key: ${{ inputs.deployment-id }}
-          message: '"Deployment locked by:\nrepo=${{ github.repository }}\nbranch=${{ github.ref_name }}\nrun=${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"'
-          # message: "\"Deployment locked by repo=${{ github.repository }} branch=${{ github.ref_name }} run=${{ github.run_id }}\""
+          message: "\"Deployment locked by repo=${{ github.repository }} branch=${{ github.ref_name }} run=${{ github.run_id }}\""
             
