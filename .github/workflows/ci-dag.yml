@@ -23,11 +23,11 @@ jobs:
           mode: lock
           key: ${{ inputs.deployment-id }}
           message: |
-            Locked by repository: ${{ github.repository }}
+            "Locked by repository: ${{ github.repository }}
             Branch: ${{ github.ref_name }}
             Actor: ${{ github.actor }}
             Workflow run:
-            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
       # - name: Simulate long-running job
       #   run: sleep 300
